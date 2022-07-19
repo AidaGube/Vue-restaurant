@@ -1,0 +1,217 @@
+.contact {
+  &__btn-gray {
+    display: none;
+    @media (max-width: 760px) {
+      display: block;
+    }
+    @media (max-width: 1025px) {
+      display: block;
+    }
+  }
+  &__section {
+    max-height: 500px;
+    @media (max-width: 4760px) {
+      max-height: 900px;
+    }
+  }
+
+  &__section-item {
+    &:first-child {
+      background: #2e2b2c;
+      box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
+      border-radius: 15px;
+      max-width: 525px;
+    }
+    &:last-child {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 760px) {
+        margin-left: -60px;
+        .contact__btn-gray {
+          display: block;
+        }
+      }
+    }
+    .map-pointer {
+      cursor: pointer;
+      animation-name: map;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform: translateY(0);
+      @media (max-width: 760px) {
+        // display: none;
+        width: 50px;
+      }
+      @media (max-width: 4760px) {
+        margin: 100px;
+        
+      }
+    }
+    @keyframes map {
+      0% {
+        transform: translateY(10px);
+      }
+      50% {
+        transform: translateY(0px);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+  }
+
+  &__section-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 20px;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+      padding: 50px 0 20px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      padding: 25px 0 25px 45px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 35px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.15) 48.33%,
+        rgba(255, 255, 255, 0) 100.87%
+      );
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 433px;
+    // width: 433px;
+    margin: 17px 0;
+    @media (max-width: 1025px) {
+      flex-direction: column;
+    }
+    @media (max-width: 760px) {
+      flex-direction: column;
+    }
+  }
+
+
+  &__footer-title {
+    color: #ffffff;
+    @media (max-width: 1025px) {
+      margin-top: 10px;
+    }
+    @media (max-width: 760px) {
+      margin-top: 10px;
+    }
+    h4 {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 27px;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 15px;
+      color: #cfcfcf;
+    }
+  }
+}
+.adress {
+  padding: 15px 0 0 52px;
+  @media (max-width: 1025px) {
+    padding: 15px 0 0 32px;
+  }
+  @media (max-width: 450px) {
+    padding: 15px 0 0 32px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+    svg {
+      margin-right: 11px;
+    }
+  }
+
+  &__item-header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    span {
+      color: #cfcfcf;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 10px;
+    }
+    padding-right: 15px;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.15) 48.33%,
+      rgba(255, 255, 255, 0) 100.87%
+    );
+  }
+}
+.social {
+  display: flex;
+  margin-bottom: 24px;
+  p {
+    margin-right: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  &__icons {
+    svg {
+      cursor: pointer;
+
+      transition: 0.3s all ease;
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.about {
+  &__us {
+    // background: url("../../images/about-bg.png") no-repeat center;
+    max-width: 1364px;
+    background-size: cover;
+    margin: 93px auto 0;
+
+    @media (max-width: 745px) {
+      display: none;
+    }
+  }
+  &__items {
+    display: flex;
+
+    gap: 50px;
+    padding: 70px 100px 70px 70px;
+    background: linear-gradient(90deg, #211f20 0%, rgba(68, 64, 63, 0) 100%);
+
+    @media (max-width: 1250px) {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #cfcfcf;
+    margin: 30px 0 60px;
+    width: 550px;
+  }
+
+  &__btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 18px 14px;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    svg {
+      margin-right: 15px;
+
+      path {
+        transition: 0.3s all ease;
+      }
+    }
+
+    &:hover .svg-menu {
+      transform: translateX(4px);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @media (max-width: 1250px) {
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    cursor: pointer;
+    background: rgba(80, 75, 74, 0.9);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 228px;
+    width: 228px;
+    transition: 0.3s all ease;
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #ffffff;
+      margin-top: 26px;
+    }
+    &:hover {
+      box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.4);
+    }
+    &:hover svg path {
+      fill: #79b282;
+    }
+    &:hover p {
+      color: #79b282;
+    }
+  }
+}

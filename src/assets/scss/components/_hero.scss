@@ -1,0 +1,30 @@
+.hero {
+  //   height: 484px;
+  margin-top: 100px;
+  &__content {
+    background: linear-gradient(90deg, #211f20 0%, rgba(68, 64, 63, 0) 100%);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 484px;
+
+    @media (max-width: 1180px) {
+      height: 450px;
+    }
+    @media (max-width: 520px) {
+      height: 400px;
+    }
+    @media (max-width: 370px) {
+      height: 380px;
+    }
+    @media (max-width: 300px) {
+      height: 300px;
+    }
+    img {
+      width: 633px;
+      max-width: 100%;
+    }
+  }
+}

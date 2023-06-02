@@ -1,19 +1,22 @@
-# logos
+# Logos Restaurant Web Application
 
-## Project setup
-```
-yarn install
-```
+## Main features:
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+<ol>
+   <li>Vue-restaurant project: Development of a restaurant website on Vue using Vuex</li>
+   <li>Adaptive layout: Creating an adaptive layout for correct display on various devices.</li>
+   <li>Firebase: Using Firebase for Authentication Functions</li>
+   <li>Administrative panel: Development of an administrative panel for managing menus, promotions and orders.</li>
+ </ol>
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Stack:
+ <p> Vue, VueX, Firebase, Styled-Components</p>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## To run this app:
+
+<ol>
+   <li> Clone this repository</li>
+   <li> Install all necessary dependencies: npm i</li>
+   <li> Start the app: npm serve</li>
+ </ol>
+
